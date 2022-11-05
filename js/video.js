@@ -34,7 +34,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 // skip ahead button: advance the current video by 10 seconds. if the video length has been exceeded, go back to the start of the video. log the current location of the video
 document.querySelector("#skip").addEventListener("click", function() {
-	if (video.currentTime += 10 <= video.duration) {
+	if ((video.currentTime + 10) <= video.duration) {
 		video.currentTime += 10;
 	}
 	else {
